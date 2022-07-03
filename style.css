@@ -1,0 +1,137 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: RobotoThin;
+  src: url(/task/fonts/Robotothin.ttf); }
+@font-face {
+  font-family: RobotoLight;
+  src: url(/task/fonts/Robotolight.ttf); }
+@font-face {
+  font-family: RobotoMedium;
+  src: url(/task/fonts/Robotomedium.ttf); }
+@font-face {
+  font-family: RobotoReg;
+  src: url(/task/fonts/Roboto.ttf); }
+@font-face {
+  font-family: RobotoBold;
+  src: url(/task/fonts/Robotobold.ttf); }
+body {
+  width: 100%;
+  height: auto;
+  color: white;
+  font-family: RobotoReg, sans-serif; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+.wrapper {
+  width: 1200px;
+  height: 1000px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  background-color: #C0DBD9;
+  position: relative; }
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #7FAFF6;
+  margin-bottom: 15px; }
+
+.btn {
+  padding: 8px 15px;
+  background-color: #A5C7F9;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 30px; }
+
+/*БЛОК1*/
+.block1 {
+  display: grid;
+  grid-template-columns: 390px 590px 160px;
+  grid-template-rows: repeat(2, 198px);
+  gap: 15px;
+  font-size: 53px;
+  background-color: #B3F95A;
+  margin-bottom: 15px; }
+  .block1 .items {
+    background-color: #8AD191;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.item4 {
+  grid-column: 1/3; }
+
+.item1::after {
+  content: '1'; }
+
+.item2::after {
+  content: '2'; }
+
+.item3::after {
+  content: '3'; }
+
+.item4::after {
+  content: '4'; }
+
+.item5::after {
+  content: '5'; }
+
+/*БЛОК2*/
+.block2 {
+  width: 100%;
+  background-color: #88B5BF;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 30px;
+  margin-bottom: 100px; }
+  .block2 .item {
+    width: 22.972972972%;
+    background-color: #0D89B0;
+    height: auto;
+    padding-bottom: 17.927927927%; }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #7FAFF6; }
+
+/*POPUP*/
+.pop_up {
+  width: 400px;
+  height: 400px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: -400px;
+  transition: all 0.5s ease;
+  background-color: #FFFFFF; }
+  .pop_up a {
+    top: 15px;
+    right: 15px;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    text-align: right;
+    padding: 8px 15px;
+    background-color: #7FAFF6; }
+
+.pop_up:target {
+  top: 20%; }
+
+/*# sourceMappingURL=style.css.map */
